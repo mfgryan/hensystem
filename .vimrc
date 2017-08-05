@@ -63,7 +63,6 @@ let g:list_of_disabled_keys = []
 "Custom settings
 "----------------------------------------------------
 
-"colorscheme badwolf        " awesome colorscheme
 colorscheme molokai
 syntax enable           " enable syntax processing
 set tabstop=4       " number of visual spaces per TAB
