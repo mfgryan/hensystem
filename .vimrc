@@ -46,7 +46,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_ignore_files = ['^[.].*$']
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" passive mode below enable with ctrl-E
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 "----------------------------------------------------
 "Hardtime settings
@@ -63,7 +68,7 @@ let g:list_of_disabled_keys = []
 "Custom settings
 "----------------------------------------------------
 
-colorscheme molokai
+colorscheme molokai     " color scheme
 syntax enable           " enable syntax processing
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
