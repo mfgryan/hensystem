@@ -70,6 +70,7 @@ let g:list_of_disabled_keys = []
 "----------------------------------------------------
 
 colorscheme molokai     " color scheme
+let g:solarized_termcolors=256
 syntax enable           " enable syntax processing
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
