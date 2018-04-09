@@ -1,13 +1,13 @@
 # Hensystem
   
-  Miscellaneous scripts, settings files, utilities.
+  Miscellaneous scripts, settings files, and utilities.
 
 ## Development
 
 To contribute to this repository clone **`git clone https://github.com/mfgryan/hensystems.git`**
 
-**\*Note** most of this work is for running on a **linux** system. 
-To use it you will need either to be running a linux distro or virtual machine image.
+**\*Note** most of this work is for running bash on a **linux** system. 
+To use it you will need to be running on linux or on a terminal emulator.
 
 ## Questions?
 
