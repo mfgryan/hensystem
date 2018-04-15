@@ -2,11 +2,11 @@
 # Hensystem
   
   Miscellaneous scripts, settings files, and utilities.
-  **\*Note** This README is executable!
+  **\*Note** This README is executable. Try it!
 
 ## Installation
 
-To install the various dot files, run setup.sh and follow the prompts.
+To install the various dot files, run **`setup.sh`** and follow the prompts.
 
 ## Development
 
