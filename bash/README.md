@@ -3,6 +3,3 @@
 # Miscellaneous Bash notes
 
 Each file is runnable with less. Source links at bottom of file
- 
-##TODO
-Will format the notes with manpage formatting
