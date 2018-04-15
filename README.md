@@ -2,7 +2,7 @@
 # Hensystem
   
   Miscellaneous scripts, settings files, and utilities.
-  **\*Note** This README is executable!
+  **\*Note** This README is executable. Try it!
 
 ## Installation
 
