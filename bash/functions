@@ -1,0 +1,19 @@
+#!/usr/bin/less
+
+function function_name{
+  command
+}
+
+or 
+
+function function_name(){
+  command
+}
+
+arguments are passed in as positional parameters
+
+functions return an exit status
+
+local loc_var=value - declares a local variable
+
+http://tldp.org/LDP/abs/html/functions.html

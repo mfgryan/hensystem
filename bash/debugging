@@ -1,0 +1,9 @@
+#!/usr/bin/less
+
+sh -n - checks for syntax errors
+sh -v - echoes each command before execution
+sh -x - echoes the result of each command
+
+trapping signals
+
+http://tldp.org/LDP/abs/html/debugging.html
