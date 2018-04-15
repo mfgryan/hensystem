@@ -1,3 +1,4 @@
+#!/usr/bin/less
 # Hensystem
   
   Miscellaneous scripts, settings files, and utilities.
