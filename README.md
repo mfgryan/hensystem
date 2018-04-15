@@ -6,7 +6,7 @@
 
 ## Installation
 
-To install the various dot files, run setup.sh and follow the prompts.
+To install the various dot files, run `setup.sh` and follow the prompts.
 
 ## Development
 
