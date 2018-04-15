@@ -1,0 +1,46 @@
+#!/usr/bin/less
+
+users - all logged in users
+
+groups - groups current user belongs to
+
+chown, chgrp - change ownership
+
+useradd, userdel - create / delete users
+
+id - user id and effective id of current process
+
+who - all users logged in to system
+
+ac - logged in time
+
+last - last logged in users
+
+System information:
+uname - system specs
+arch - system architecture
+lsof - list open files
+strace - system trace
+ltrace - library trace
+nc - netcat
+free - memory usage
+procinfo, lsdev, du,stat, top
+nohup - keep command running even after logoff
+
+Network:
+nmap, ifconfig, netstat, iwconfig, ip, route, iptables
+chkconfig, tcpdump, 
+
+File System:
+mount, unmount, sync, fdisk, lspci, chroot, lockfile, mknod
+dump, restore
+
+System Resources:
+ulimit, quota, setquota, umask, rdev, lsmod
+
+Msc:
+env
+ldd - show shared lib dep for an executable
+watch
+
+http://tldp.org/LDP/abs/html/system.html

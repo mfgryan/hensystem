@@ -1,0 +1,81 @@
+#!/usr/bin/less
+
+environment variables:
+Each process has an environment. A script can export only to child processes.
+
+positional parameters:
+arguments passed to the script.
+$0 name of script $1 arg 1 $2 arg 2 etc..
+$* $@ all positional params
+$# number of args
+shift n command moves all positional args over to the left by n
+
+single vs double quotes
+single don't allow referencing variables
+
+${#string} length of the string
+
+"$string" : 'regex' match length of substring in string
+
+${string:position} substring extratction
+${string:position:length}
+${string#substring} deletes shortest substring match
+${string##substring} deletes longest match of substring
+${string%substring} deletes shortest match from back
+${string%%substring} deletes longest match from back
+
+${string/substring/replacement} replace first match
+${string//substring/replacement} replace all matches
+${string/#substring/replacement} if front matches, replace
+${string/%substring/replacement} if back matches, replace
+
+${parameter-default}, ${parameter:-default}
+if not set use default
+
+${parameteter=default}, ${parameter:=default}
+if parameter not set, set to default
+
+${parameter+alt_value}, ${parameter:+alt_value}
+if parameter set, use alt_value, else null
+
+${parameter?err_msg},${parameter:?err_msg}
+if set, use it, else print err_msg
+
+${#array[*]}, ${#array[@]}
+length of array
+
+* Notes on special characters
+
+: colon is null command. SHELL equivalent of NOP
+synonym for true
+
+${} parameter substituion
+
+$? exit status variable
+
+$$ PID variable
+
+() subshell
+
+{} code block. anonymous function
+example: saving code block output to file
+
+{ #Begin code block.
+    echo
+        echo "Hello world"
+} > "output.txt" # Redirects output of block to file
+
+$[ ... ] or (()) integer expansion
+
+escape charcters
+\n newline
+\r return
+\t tab
+\v vertical tab
+\b backspace
+\a alert
+\0xx octal
+
+http://tldp.org/LDP/abs/html/varsubn.html
+http://tldp.org/LDP/abs/html/varassignment.html
+http://tldp.org/LDP/abs/html/parameter-substitution.html

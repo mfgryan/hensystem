@@ -1,0 +1,38 @@
+#!/usr/bin/less
+
+if/then tests for the exit status to equal 0
+
+examples:
+(( 0 && 1 )) # Logical AND
+let "num = (( 0 && 1 ))"
+(( 200 || 11 )) # Logical OR
+(( 200 | 11 )) # Bitwise OR
+
+if can test any command
+example:
+if grep -q Bash file
+    then echo "file contains Bash"
+fi
+
+truthy values
+0
+1
+-1
+random string
+"false"
+
+falsy values
+NULL
+uninitialized variables
+null variable
+
+'[' is the same as 'test'
+
+[[ extended test command
+works with && || < and >
+
+for file test operators see 'man test'
+
+operator precedence
+
+http://tldp.org/LDP/abs/html/opprecedence.html

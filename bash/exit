@@ -1,0 +1,10 @@
+#!/usr/bin/less
+
+exit nnn (0-255) error code
+true is 0 anything else is false
+
+#? exit status of last command
+
+! can reverse exit status eg ! true = 1
+
+http://tldp.org/LDP/abs/html/exit-status.html

@@ -1,0 +1,22 @@
+#!/usr/bin/less
+
+printf - limited variant of the C language printf() library
+read - reads from stdin
+pushd, popd, dirs
+    bookmarking working directories
+    pushd dir to push onto the stack and cd to dir
+    popd to pop and dirs to list
+
+set - invoking with no args lists enivornmental variables
+
+getopts - used for parsing command line arguments to script
+
+jobs - list jobs in background
+
+fg, bg foreground, background
+
+xargs - filter for feeding arguments to a command
+
+yes - continuous string of the character y
+
+http://tldp.org/LDP/abs/html/internal.html

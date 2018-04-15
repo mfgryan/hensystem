@@ -1,0 +1,13 @@
+#!/usr/bin/less
+
+$RANDOM returns a psudeo random integer 0 - 32767
+
+use modulo for range eg.
+    number=$RANDOM
+    RANGE=500
+    let "number %= $RANGE"
+    echo "$number is in $RANGE"
+
+    if you want lower bound set up a test to discard lower nums
+
+http://tldp.org/LDP/abs/html/randomvar.html
