@@ -1,0 +1,8 @@
+- You can manage all your configs in a git repo (local or on github)
+- Ctr+L to clear screen
+- man ascii (ascii table)
+- sudo !! (repeats last command with sudo)
+- cd - (go back to previous dir)
+- less +F foo.log (tail mode for less)
+- :w ! sudo tee % (reopen file as sudo)
+
