@@ -22,3 +22,5 @@ done
 echo "Copying colors into ~/.vim/colors"
 mkdir -p ~/.vim/colors
 cp -pr ${MY_PATH}/colors/* ~/.vim/colors
+
+source ~/.bashrc
