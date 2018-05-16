@@ -6,16 +6,19 @@ FILE_LIST=".bash_aliases .bashrc .profile .vimrc"
 for file in $FILE_LIST; do
     if [ -e "${MY_PATH}/${file}" ]; then
         if [ -e ~/${file} ]; then
-            echo "Overwriting $file: Save Backup? (y/n)"
+            echo "Overwrite $file? (y/n)"
             read input
             if [ -n "$input" ] && [ "$input" = "y" ]; then
                 mv ~/${file} ~/${file}.bk
+                cp -p ${MY_PATH}/${file} ~/
+                echo "Copied ${MY_PATH}/${file} to ~/${file}"
             fi
+        else
+            cp -p ${MY_PATH}/${file} ~/
         fi 
-        cp ${MY_PATH}/${file} ~/
     fi
 done
 
 echo "Copying colors into ~/.vim/colors"
 mkdir -p ~/.vim/colors
-cp -r ${MY_PATH}/colors/* ~/.vim/colors
+cp -pr ${MY_PATH}/colors/* ~/.vim/colors
