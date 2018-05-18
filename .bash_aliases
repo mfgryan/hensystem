@@ -14,6 +14,15 @@ function tchmod() {
     fi
 }
 
+# function to add, commit and push to github all in one.
+function gpall() {
+    if [[ -n "$1" ]]; then
+        git add -A && git commit -m "$1" && git push
+    else
+        echo "Error: Please run with a commit message eg. $0 my-message-here"
+    fi
+}
+
 # Ubuntu only
 #alias open=xdg-open
 
