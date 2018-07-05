@@ -23,6 +23,14 @@ function gpall() {
     fi
 }
 
+function bashin() {
+    if [[ -n "$1" ]]; then
+        docker exec -it $1 /bin/bash 
+    else
+        echo "Error: Please run with a container name eg. $0 container_name"
+    fi
+}
+
 # Ubuntu only
 #alias open=xdg-open
 
