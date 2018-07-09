@@ -36,3 +36,5 @@ function bashin() {
 
 # Mac only. Install gls and uncomment (brew install coreutils)
 #alias ls='gls --color --group-directories-first'
+#alias python='python3'
+#alias pip='pip3'

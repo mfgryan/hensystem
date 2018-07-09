@@ -3,6 +3,11 @@
 MY_PATH=$(cd $(dirname $0) && pwd)
 FILE_LIST=".bash_aliases .bashrc .profile .vimrc"
 
+#Install Vundle, if not already there.
+if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+fi
+
 for file in $FILE_LIST; do
     if [ -e "${MY_PATH}/${file}" ]; then
         if [ -e ~/${file} ]; then
